@@ -1,0 +1,8 @@
+[alias]
+	lol = log --graph --pretty=format:'%C(yellow)%h%Creset %C(bold blue)<%an>%Creset %C(green)(%ar)%Creset %C(red)%d%Creset %s' -16
+
+[push]
+	default = simple
+
+[user]
+	name = Dustin Brown
