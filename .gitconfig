@@ -1,6 +1,6 @@
 [alias]
 	lol = log --graph --pretty=format:'%C(yellow)%h%Creset %C(bold blue)<%an>%Creset %C(green)(%ar)%Creset %C(red)%d%Creset %s' -16
-	recommit = commit --reuse-message=HEAD --amend
+	recommit = !git commit --reuse-message=HEAD --amend --author=\"$(git config user.name) <$(git config user.email)>\"
 
 [push]
 	default = simple
